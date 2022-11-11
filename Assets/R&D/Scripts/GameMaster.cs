@@ -22,6 +22,7 @@ public class GameMaster : MonoBehaviour
     InitiatorCharacter = CharacterDatabase.GetComponent<Sourn>();
     TargetCharacter = CharacterDatabase.GetComponent<Aedh>();
     InitiatorCharacter.isTheAttacker = true;
+    currentAttacker = InitiatorCharacter;
 
    }
    
@@ -46,7 +47,7 @@ public class GameMaster : MonoBehaviour
     //Updates health after an attack
        public void CalcHealth(float totalDamage){
         currentAttacker.characterCurrentHealth = currentAttacker.characterCurrentHealth - totalDamage;
-        
+
 
     }
 
