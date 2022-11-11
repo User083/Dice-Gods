@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Screen" style="flex-direction: column; height: 100%; width: 100%;">
+        <ui:GroupBox>
+            <ui:TextField picking-mode="Ignore" label="Attacker" name="AttackerStatus" readonly="true" focusable="false" />
+            <ui:IntegerField label="Round Turn: " value="0" name="GameTurn" readonly="true" is-delayed="true" style="align-items: center; justify-content: center; flex-direction: row; width: 137px; height: 21px;" />
+        </ui:GroupBox>
+        <ui:VisualElement style="justify-content: space-around; align-items: flex-start; flex-direction: row;">
+            <ui:GroupBox name="Initiator">
+                <ui:TextField picking-mode="Ignore" label="Name:" value="Name" text="Name" name="InitiatorName" readonly="true" focusable="false" />
+                <ui:FloatField label="Health" value="100" name="InitiatorHealth" readonly="true" focusable="false" />
+                <ui:FloatField label="Base Damage" value="10" name="InitiatorBaseDamage" focusable="false" readonly="true" />
+                <ui:FloatField label="Base Defence" value="20" name="InitiatorBaseDefence" focusable="false" readonly="true" />
+            </ui:GroupBox>
+            <ui:GroupBox name="Target">
+                <ui:TextField picking-mode="Ignore" label="Name:" value="Name" text="Name" name="TargetName" readonly="true" focusable="false" />
+                <ui:FloatField label="Health" value="100" name="TargetHealth" focusable="false" readonly="true" />
+                <ui:FloatField label="Base Damage" value="25" name="TargetBaseDamage" readonly="true" focusable="false" />
+                <ui:FloatField label="Base Defence" value="10" name="TargetBaseDefence" readonly="true" focusable="false" />
+            </ui:GroupBox>
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: center; flex-direction: column; justify-content: space-around;">
+            <ui:GroupBox style="align-items: center; justify-content: center;">
+                <ui:TextField picking-mode="Ignore" label="Action: " value="filler text" name="SuccessResult" readonly="false" />
+                <ui:FloatField label="Action result: " value="0" name="DamageResult" readonly="false" />
+            </ui:GroupBox>
+            <ui:Button text="Roll" display-tooltip-when-elided="true" name="ButtonRoll" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
