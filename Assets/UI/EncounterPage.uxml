@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MasterStylesheet.uss?fileID=7433441132597879392&amp;guid=3eb98bd8296970945abcc51a3ad5e939&amp;type=3#MasterStylesheet" />
     <ui:VisualElement name="Screen" style="flex-direction: column; height: 100%; width: 100%;">
         <ui:GroupBox>
             <ui:TextField picking-mode="Ignore" label="Attacker" name="AttackerStatus" readonly="true" focusable="false" />
@@ -23,7 +24,7 @@
                 <ui:TextField picking-mode="Ignore" label="Action: " value="filler text" name="SuccessResult" readonly="false" />
                 <ui:FloatField label="Action result: " value="0" name="DamageResult" readonly="false" />
             </ui:GroupBox>
-            <ui:Button text="Roll" display-tooltip-when-elided="true" name="ButtonRoll" />
+            <ui:Button text="Roll" display-tooltip-when-elided="true" name="ButtonRoll" class="primary-button" style="-unity-font-style: normal; -unity-font: url(&apos;project://database/Assets/UI/Fonts/LethalInjector/lethal-injector%20bold.otf?fileID=12800000&amp;guid=7fe342785afa1554a9b3854f9fa1c14d&amp;type=3#lethal-injector bold&apos;); cursor: url(&apos;project://database/Assets/UI/Fonts/LethalInjector/lethal-injector%20bold%20italic.otf?fileID=2800000&amp;guid=f9d75bc3231ee6f48b7f7f7484a1fb16&amp;type=3#Font Texture&apos;); background-color: rgba(149, 124, 91, 255); color: rgba(0, 0, 0, 255); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; transition-property: cursor; transition-duration: 1s; transition-timing-function: ease-in-bounce; transition-delay: 1s;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

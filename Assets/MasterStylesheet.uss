@@ -1,0 +1,18 @@
+.heading1 {
+    -unity-font: url('project://database/Assets/UI/Fonts/Typewriter/JMH%20Typewriter.ttf?fileID=12800000&guid=7b0aef477df93274e81f888bcd0e3c48&type=3#JMH Typewriter');
+    font-size: 24px;
+}
+
+.primary-button {
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -unity-font: url('project://database/Assets/UI/Fonts/Typewriter/JMH%20Typewriter.otf?fileID=12800000&guid=ef8d39d68c2cd6442922dfab6dcafb7a&type=3#JMH Typewriter');
+    font-size: 24px;
+    -unity-text-align: upper-center;
+}
