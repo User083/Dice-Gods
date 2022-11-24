@@ -19,7 +19,7 @@ public Modifier(int baseValue, float baseMultiplier, string name, string descrip
   this.duration = 0f;
   this.modName = name;
   this.modDescription = description;
-  this.finalValue = baseValue;
+  
 
 }
   
