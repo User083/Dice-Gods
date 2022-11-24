@@ -48,7 +48,7 @@ public class CreationUI : MonoBehaviour
         {
             
             //Create new character and update char UI
-           newCharacter = new Character(characterName.value, characterDescription.value, characterWeight.value, characterValue.value, characterHealth.value); 
+           
             if(!CheckValues(characterName.value, characterDescription.value, characterWeight.value, characterValue.value, characterHealth.value))
             {
             Debug.Log("Character details need to be filled in first");
@@ -56,7 +56,8 @@ public class CreationUI : MonoBehaviour
             }
             else
             {
-               charName.value = newCharacter.actorName;
+            newCharacter = new Character(characterName.value, characterDescription.value, characterWeight.value, characterValue.value, characterHealth.value); 
+            charName.value = newCharacter.actorName;
             charDescription.value = newCharacter.actorDescription;
             charWeight.value = newCharacter.actorWeight;
             charValue.value = newCharacter.actorValue;
@@ -111,7 +112,7 @@ public class CreationUI : MonoBehaviour
 
        bool CheckValues(string name, string desc, float weight, float value, float health)
         {
-            if(name == "" && desc == "" && weight < 0f && value < 0f && health < 1f)
+            if(name == "" || desc == "" || weight < 0f || value < 0f || health < 1f)
             {
                 return false;
             }

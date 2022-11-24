@@ -13,7 +13,7 @@ public class Character : Actor
         actorName= name;
         actorDescription= description;
         actorWeight= weight;
-        this.actorValue= value;
-        this.Health = new HealthStruct(maxHealth, maxHealth);
+        actorValue= value;
+        Health = new HealthStruct(maxHealth, maxHealth);
     }
 }
