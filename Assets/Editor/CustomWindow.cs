@@ -5,7 +5,7 @@ using UnityEditor;
 
 public class CustomWindow : ExtendedEditorWindow
 {
-
+    
     public static void Open(ScriptableObject scriptableObject)
     {
         CustomWindow window = GetWindow<CustomWindow>("Scriptable Object Editor");
@@ -14,7 +14,12 @@ public class CustomWindow : ExtendedEditorWindow
 
     private void OnGUI()
     {
-        currentProperty = serializedObject.FindProperty("SO_Character");
+       //custom window WIP colour code
+        GUI.DrawTexture(new Rect(0, 0, maxSize.x, maxSize.y), EditorGUIUtility.whiteTexture, ScaleMode.StretchToFill);
+        GUI.Label(new Rect(200, 200, 100, 100), "A label");
+        GUI.TextField(new Rect(20, 20, 70, 30), "");
+        //Custom window layout
+        currentProperty = serializedObject.FindProperty("characterAttributes");
         EditorGUILayout.BeginHorizontal();
         EditorGUILayout.BeginVertical("box", GUILayout.MaxWidth(150), GUILayout.ExpandHeight(true));
         DrawSidebar(currentProperty);

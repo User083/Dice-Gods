@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   characterDescription: 
-  characterMaxHealth: 0
-  characterCurrentHealth: 0
   characterDefense: 0
   characterStamina: 0
+  characterAttributes:
+  - attribute: Intelligence
+    description: Measure of a character's wits.
+    rank: 2
+  - attribute: Strength
+    description: Measure of a characters raw physical power.
+    rank: 0
+  - attribute: Dexterity
+    description: Measure of a character's overall agility.
+    rank: 12
+  characterInventory: []
